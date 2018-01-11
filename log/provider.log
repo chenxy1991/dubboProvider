@@ -1,0 +1,222 @@
+ INFO 12-11 08:29:14(DubboProtocol.java:130):  [DUBBO] disconected from /192.168.112.1:65408,url:dubbo://192.168.112.1:20880/com.cxy.UserService.UserService?anyhost=true&application=hello-world-provider&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.cxy.UserService.UserService&methods=sayHello&pid=16056&side=provider&timestamp=1512914768869, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 12-11 08:29:15(ClientCnxn.java:1159): Unable to read additional data from server sessionid 0x160390db6b40014, likely server has closed socket, closing socket connection and attempting reconnect
+ INFO 12-11 08:29:15(ZkClient.java:713): zookeeper state changed (Disconnected)
+ INFO 12-11 08:29:15(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ INFO 12-11 08:29:15(ClientCnxn.java:949): Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+ INFO 12-11 08:29:15(ClientCnxn.java:1155): Unable to reconnect to ZooKeeper service, session 0x160390db6b40014 has expired, closing socket connection
+ INFO 12-11 08:29:15(ZkClient.java:713): zookeeper state changed (Expired)
+ INFO 12-11 08:29:15(ZooKeeper.java:373): Initiating client connection, connectString=localhost:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@1827638
+ INFO 12-11 08:29:15(FailbackRegistry.java:282):  [DUBBO] Recover register url [dubbo://192.168.112.1:20880/com.cxy.UserService.UserService?anyhost=true&application=hello-world-provider&dubbo=2.5.3&interface=com.cxy.UserService.UserService&methods=sayHello&pid=16056&side=provider&timestamp=1512914768869], dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 12-11 08:29:15(FailbackRegistry.java:292):  [DUBBO] Recover subscribe url [provider://192.168.112.1:20880/com.cxy.UserService.UserService?anyhost=true&application=hello-world-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cxy.UserService.UserService&methods=sayHello&pid=16056&side=provider&timestamp=1512914768869], dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 12-11 08:29:15(ClientCnxn.java:520): EventThread shut down
+ INFO 12-11 08:29:16(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ INFO 12-11 08:29:16(ClientCnxn.java:949): Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+ INFO 12-11 08:29:16(ClientCnxn.java:738): Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x160390db6b40016, negotiated timeout = 30000
+ INFO 12-11 08:29:16(ZkClient.java:713): zookeeper state changed (SyncConnected)
+ INFO 12-11 08:29:16(AbstractRegistry.java:422):  [DUBBO] Notify urls for subscribe url provider://192.168.112.1:20880/com.cxy.UserService.UserService?anyhost=true&application=hello-world-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cxy.UserService.UserService&methods=sayHello&pid=16056&side=provider&timestamp=1512914768869, urls: [empty://192.168.112.1:20880/com.cxy.UserService.UserService?anyhost=true&application=hello-world-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cxy.UserService.UserService&methods=sayHello&pid=16056&side=provider&timestamp=1512914768869], dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 12-11 08:29:16(FailbackRegistry.java:309):  [DUBBO] Retry register [dubbo://192.168.112.1:20880/com.cxy.UserService.UserService?anyhost=true&application=hello-world-provider&dubbo=2.5.3&interface=com.cxy.UserService.UserService&methods=sayHello&pid=16056&side=provider&timestamp=1512914768869], dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 12-11 08:29:17(FailbackRegistry.java:354):  [DUBBO] Retry subscribe {provider://192.168.112.1:20880/com.cxy.UserService.UserService?anyhost=true&application=hello-world-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cxy.UserService.UserService&methods=sayHello&pid=16056&side=provider&timestamp=1512914768869=[com.alibaba.dubbo.registry.integration.RegistryProtocol$OverrideListener@128493c]}, dubbo version: 2.5.3, current host: 127.0.0.1
+ INFO 12-11 08:29:22(AbstractRegistry.java:422):  [DUBBO] Notify urls for subscribe url provider://192.168.112.1:20880/com.cxy.UserService.UserService?anyhost=true&application=hello-world-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cxy.UserService.UserService&methods=sayHello&pid=16056&side=provider&timestamp=1512914768869, urls: [empty://192.168.112.1:20880/com.cxy.UserService.UserService?anyhost=true&application=hello-world-provider&category=configurators&check=false&dubbo=2.5.3&interface=com.cxy.UserService.UserService&methods=sayHello&pid=16056&side=provider&timestamp=1512914768869], dubbo version: 2.5.3, current host: 127.0.0.1
+ WARN 12-11 10:19:30(ClientCnxn.java:1161): Session 0x160390db6b40016 for server localhost/0:0:0:0:0:0:0:1:2181, unexpected error, closing socket connection and attempting reconnect
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at org.apache.zookeeper.ClientCnxn$SendThread.doIO(ClientCnxn.java:858)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1130)
+ INFO 12-11 10:19:30(ZkClient.java:713): zookeeper state changed (Disconnected)
+ INFO 12-11 10:19:31(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:19:32(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:33(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:19:34(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:35(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:19:36(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:37(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:19:38(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:39(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:19:40(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:41(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:19:42(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:43(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:19:44(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:46(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:19:47(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:48(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:19:49(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:51(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:19:52(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:53(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:19:54(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:55(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:19:56(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:56(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:19:57(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:19:58(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:19:59(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:00(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:20:01(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:02(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:20:03(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:04(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:20:05(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:06(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:20:07(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:08(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:20:09(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:10(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:20:11(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:12(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:20:13(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:14(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:20:15(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:16(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:20:17(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:19(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:20:20(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:20(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:20:21(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:23(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:20:24(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:25(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:20:26(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:28(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:20:29(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:29(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:20:30(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:31(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ WARN 12-11 10:20:32(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:33(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ WARN 12-11 10:20:34(ClientCnxn.java:1161): Session 0x160390db6b40016 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1119)
+ INFO 12-11 10:20:36(ClientCnxn.java:1041): Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181
+ INFO 12-11 10:20:36(ClientCnxn.java:949): Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+ INFO 12-11 10:20:36(ClientCnxn.java:1159): Unable to read additional data from server sessionid 0x160390db6b40016, likely server has closed socket, closing socket connection and attempting reconnect
+ INFO 12-11 10:20:36(ClientCnxn.java:1041): Opening socket connection to server localhost/127.0.0.1:2181
+ INFO 12-11 10:20:36(ClientCnxn.java:949): Socket connection established to localhost/127.0.0.1:2181, initiating session
+ INFO 12-11 10:20:36(ClientCnxn.java:738): Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x160390db6b40016, negotiated timeout = 30000
+ INFO 12-11 10:20:36(ZkClient.java:713): zookeeper state changed (SyncConnected)
